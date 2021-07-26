@@ -56,8 +56,8 @@ On the application, first page the user will see is the home page. This has been
 
 ![image](https://user-images.githubusercontent.com/57040413/126936292-d5b50544-3a5e-4434-9190-910e623de763.png)
 ![image](https://user-images.githubusercontent.com/57040413/126937797-47bbd3f5-6cbb-44f0-ac8a-9128856416a1.png)
-
-
+![image](https://user-images.githubusercontent.com/57040413/126940589-d39e819e-2cd1-4d2c-b406-2f6c39e5c4a5.png)
+![image](https://user-images.githubusercontent.com/57040413/126940612-1ae2b086-6efe-495e-8d8b-9622c7517c33.png)
 
 
 Unit Testing was done so by testing each functions separately and seeing the results that was printed off and test to see if an exepected response to the assertion happens. These are run by the developer by using the "python3 -m pytest" command to test to see if the test will pass or not. Another similar command that can be used is "python3 -m pytest tests --cov=application --cov-report term-missing", this is done to test to see how much of the code are covered by the tests, this is sorted out by the higher the percentage the more code that are covered by the tests created. Another way that this can be done is through Jenkins which will run through a Git Webhook this will enable tests run automatically after every Git push.
