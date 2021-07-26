@@ -90,7 +90,7 @@ def updatetrackname(id, track_name):
 
     return redirect(url_for("home"))
 
-@app.route("/updateevent/<int:id>/<event>")
+@app.route("/updateevent/<int:id>/<event>", methods=('POST',))
 def updateevent(id, event):
     athleticevent = AthleticEvent.query.get(id)
     athleticevent.event = event
@@ -99,7 +99,7 @@ def updateevent(id, event):
 
     return redirect(url_for("home"))
 
-@app.route("/updatetracktype/<int:id>/<track_type>")
+@app.route("/updatetracktype/<int:id>/<track_type>", methods=('POST',))
 def updatetracktype(id, track_type):
     athleticevent = AthleticEvent.query.get(id)
     athleticevent.track_type = track_type
@@ -108,7 +108,7 @@ def updatetracktype(id, track_type):
 
     return redirect(url_for("home"))
 
-@app.route("/updatetime/<int:id>/<time>")
+@app.route("/updatetime/<int:id>/<time>", methods=('POST',))
 def updatetime(id, time):
     athleticevent = AthleticEvent.query.get(id)
     athleticevent.time = time

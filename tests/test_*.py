@@ -120,8 +120,6 @@ class TestUpdateLastName(TestBase):
 
         assert "Run unit tests" not in response.data.decode()
 
-
-
 class TestDelete(TestBase):
     def test_delete(self):
         response = self.client.get(
