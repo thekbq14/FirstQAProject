@@ -46,6 +46,8 @@ Trello was used as a tracking board instead of Jira, due to it being lightweight
 
 **Application**
 
+![image](https://user-images.githubusercontent.com/57040413/126936535-6fe1488d-4c8e-49d3-ab6e-113fa7886006.png)
+
 On the application, first page the user will see is the home page. This has been designed in the mind that the user's have already logged in and that this what they first see. What they will be able to see is a list off all the different times, stadiums, events, surfaces and distances they have completed at. Users can update and change their screen by adding for example "/createevent/championships" and this will add a row containing championships. From here uses can then update the row for example by "/updatedistance/5000" to add to the length the person has ran in. Finally if a person wants to leave or stop doing a particular distance they can "/delete/idnumber" the id number referring to the number on the list the distance that one doesn't want to do anymore.
 
 **Testing**
