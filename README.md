@@ -66,6 +66,10 @@ Unit Testing was done so by testing each functions separately and seeing the res
 
 Integration Tests are used to test the whole program as a whole compared to just a function in Unit testing. Selenium can be used, this is done through installing it through requirements.txt on Visual Studio Code. This simulates a user go through the website by filling forms and clicking buttons. These can also be automated through Jenkins. This wasn't used in my application due to the fact that there was no buttons or forms used. Next time an application is created, more time will be given to allow forms and buttons to be produced and hence allow integration tests.
 
+**Test Analysis**
+
+Testing is very important because it can show you where you could have gone wrong with your testing, and at times can be harder and longer to code then the program itself. As a result it took me a long time to do, longer then expected as it was what I left to last. Next time I create an application like this I would do test driven development which is where tests are written first then the program code is written alongside it, which will make it faster and mean that your program will pass your tests. Aldo unit and integration testing are simple and only scratch the surface of a wider topic in testing. Such as testing perfomance, capacity, security and many more variabilities with technology that wasn't measured.
+
 **Conclusion/Future Improvements**
 
 Overall, do feel like that the program was a success, as at the end of the day it works and does what is required by the stackholders and users. However, if done again a lot of changes could be done to it, such as adding buttons and making the Application look more neat and tidy, this could have been done by adding CSS to add colour or just href  functions for buttons. This in turn would have made the selenium tests worthwhile to have been done as they need buttons and WTForms to work or be used to the best of there ability.
