@@ -14,6 +14,12 @@ My proposal for this is an athletic scoreboard. This is designed from the athlet
 
 **Risk Assessment**
 
+![image](https://user-images.githubusercontent.com/57040413/126936103-f83ea507-6a87-41e1-b14d-cc3767fc92e8.png)
+![image](https://user-images.githubusercontent.com/57040413/126936155-e2375e7a-94a7-4e06-a8e1-8825034f6e5b.png)
+![image](https://user-images.githubusercontent.com/57040413/126936182-473f927f-56da-4479-9ea0-54c6178bf3cc.png)
+![image](https://user-images.githubusercontent.com/57040413/126936223-f8518cd1-54aa-478b-8d6e-dec13d482eef.png)
+
+
 **Continous Integration**
 
 ![Continuous Integration](https://user-images.githubusercontent.com/57040413/126934322-29c9f6d6-4a9a-4e38-b3a5-8d983d88ecf6.png)
@@ -45,6 +51,10 @@ On the application, first page the user will see is the home page. This has been
 **Testing**
 
 **Unit Testing**
+
+![image](https://user-images.githubusercontent.com/57040413/126936292-d5b50544-3a5e-4434-9190-910e623de763.png)
+![image](https://user-images.githubusercontent.com/57040413/126936324-2c8e0599-0847-4789-ba6c-c010b1c0980f.png)
+
 
 Unit Testing was done so by testing each functions separately and seeing the results that was printed off and test to see if an exepected response to the assertion happens. These are run by the developer by using the "python3 -m pytest" command to test to see if the test will pass or not. Another similar command that can be used is "python3 -m pytest tests --cov=application --cov-report term-missing", this is done to test to see how much of the code are covered by the tests, this is sorted out by the higher the percentage the more code that are covered by the tests created. Another way that this can be done is through Jenkins which will run through a Git Webhook this will enable tests run automatically after every Git push.
 
