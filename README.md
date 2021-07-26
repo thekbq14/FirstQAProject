@@ -12,17 +12,29 @@ My proposal for this is an athletic scoreboard. This is designed from the athlet
 
 **Diagrams**
 
+**Risk Assessment**
+
 **Continous Integration**
 
-Saved on my Google Drive
+![Continuous Integration](https://user-images.githubusercontent.com/57040413/126934322-29c9f6d6-4a9a-4e38-b3a5-8d983d88ecf6.png)
+
+Continous Integration is used in my project because it creates an integrated environment to development as everything is synced together. It also is rapid as well, because things such as files can be saved to VCS very quickly such as GitHub, at the same time this will allow automated testing in Jenkins.
 
 **ERD**
 
-Saved on my Google Drive
+![Simple Athletes](https://user-images.githubusercontent.com/57040413/126933916-b15e95db-599b-425f-bda1-c4035a00481a.png)
+
+![Before Athletes (1)](https://user-images.githubusercontent.com/57040413/126934150-e4129c39-c35b-4336-aaa0-9c4e21e53c02.png)
+
+![Athletes (1)](https://user-images.githubusercontent.com/57040413/126934190-353f2474-e9b8-4ee9-9bc1-f44ebd77d134.png)
+
+My ERD is used to show the relationship between the different databases that are used. This is important so the database can be structured and planned better. For example in an ERD can show a many to one relationship or many to many relationship. Examples used above is many to many relationship. I have also decided to simplify the ERD, the bottom being the original one was pretty complex and confusing, but I have now only got one one to many relationship which is the minimum required for the project. It will also make the application easier to use as there are less options.
 
 **Tracking Board**
 
-Saved on my Trello
+https://trello.com/b/nVOIu7Pt/agile-sprint-board
+
+Trello was used as a tracking board instead of Jira, due to it being lightweight and visually nice on the eye. A tracking board is also important as it makes sure that everything is being produced on time.
 
 **Development**
 
@@ -33,9 +45,11 @@ On the application, first page the user will see is the home page. This has been
 **Testing**
 
 **Unit Testing**
+
 Unit Testing was done so by testing each functions separately and seeing the results that was printed off and test to see if an exepected response to the assertion happens. These are run by the developer by using the "python3 -m pytest" command to test to see if the test will pass or not. Another similar command that can be used is "python3 -m pytest tests --cov=application --cov-report term-missing", this is done to test to see how much of the code are covered by the tests, this is sorted out by the higher the percentage the more code that are covered by the tests created. Another way that this can be done is through Jenkins which will run through a Git Webhook this will enable tests run automatically after every Git push.
 
 **Integration Tests**
+
 Integration Tests are used to test the whole program as a whole compared to just a function in Unit testing. Selenium can be used, this is done through installing it through requirements.txt on Visual Studio Code. This simulates a user go through the website by filling forms and clicking buttons. These can also be automated through Jenkins. This wasn't used in my application due to the fact that there was no buttons or forms used. Next time an application is created, more time will be given to allow forms and buttons to be produced and hence allow integration tests.
 
 **Conclusion/Future Improvements**
