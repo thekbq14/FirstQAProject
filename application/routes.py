@@ -16,7 +16,7 @@ def home():
     
     return result
 
-@app.route("/createdistance/<distance>")
+@app.route("/createdistance/<distance>", methods=('POST',))
 def createdistance(distance):
     new_distance = AthleticEvent(distance=distance)
     db.session.add(new_distance)
@@ -24,7 +24,7 @@ def createdistance(distance):
 
     return redirect(url_for("home"))
 
-@app.route("/createtrackname/<track_name>")
+@app.route("/createtrackname/<track_name>", methods=('POST',))
 def createtrackname(track_name):
     new_trackname = AthleticEvent(track_name=track_name)
     db.session.add(new_trackname)
@@ -32,7 +32,7 @@ def createtrackname(track_name):
 
     return redirect(url_for("home"))
 
-@app.route("/createevent/<event>")
+@app.route("/createevent/<event>", methods=('POST',))
 def createevent(event):
     new_event = AthleticEvent(event=event)
     db.session.add(new_event)
@@ -40,7 +40,7 @@ def createevent(event):
 
     return redirect(url_for("home"))
 
-@app.route("/createtracktype/<track_type>")
+@app.route("/createtracktype/<track_type>", methods=('POST',))
 def createtracktype(track_type):
     new_tracktype = AthleticEvent(track_type=track_type)
     db.session.add(new_tracktype)
@@ -48,7 +48,7 @@ def createtracktype(track_type):
 
     return redirect(url_for("home"))
 
-@app.route("/createtime/<time>")
+@app.route("/createtime/<time>", methods=('POST',))
 def createtime(time):
     new_time = AthleticEvent(time=time)
     db.session.add(new_time)
@@ -56,7 +56,7 @@ def createtime(time):
 
     return redirect(url_for("home"))
 
-@app.route("/createfirstname/<first_name>")
+@app.route("/createfirstname/<first_name>", methods=('POST',))
 def createfirstname(first_name):
     new_firstname = Users(first_name=first_name)
     db.session.add(new_firstname)
@@ -64,7 +64,7 @@ def createfirstname(first_name):
 
     return redirect(url_for("home"))
 
-@app.route("/createlastname/<last_name>")
+@app.route("/createlastname/<last_name>", methods=('POST',))
 def createlastname(last_name):
     new_lastname = Users(last_name=last_name)
     db.session.add(new_lastname)
@@ -72,7 +72,7 @@ def createlastname(last_name):
 
     return redirect(url_for("home"))
 
-@app.route("/updatedistance/<int:id>/<distance>")
+@app.route("/updatedistance/<int:id>/<distance>", methods=('POST',))
 def updatedistance(id, distance):
     athleticevent = AthleticEvent.query.get(id)
     athleticevent.distance = distance
@@ -81,7 +81,7 @@ def updatedistance(id, distance):
 
     return redirect(url_for("home"))
 
-@app.route("/updatetrackname/<int:id>/<track_name>")
+@app.route("/updatetrackname/<int:id>/<track_name>", methods=('POST',))
 def updatetrackname(id, track_name):
     athleticevent = AthleticEvent.query.get(id)
     athleticevent.track_name = track_name
@@ -108,7 +108,7 @@ def updatetracktype(id, track_type):
 
     return redirect(url_for("home"))
 
-@app.route("/update/<int:id>/<time>")
+@app.route("/updatetime/<int:id>/<time>")
 def updatetime(id, time):
     athleticevent = AthleticEvent.query.get(id)
     athleticevent.time = time
@@ -117,7 +117,7 @@ def updatetime(id, time):
 
     return redirect(url_for("home"))
 
-@app.route("/update/<int:id>/<first_name>")
+@app.route("/updatefirstname/<int:id>/<first_name>", methods=('POST',))
 def updatefirstname(id, first_name):
     users = Users.query.get(id)
     users.first_name = first_name
@@ -126,7 +126,7 @@ def updatefirstname(id, first_name):
 
     return redirect(url_for("home"))
 
-@app.route("/update/<int:id>/<last_name>")
+@app.route("/updatelastname/<int:id>/<last_name>", methods=('POST',))
 def updatelastname(id, last_name):
     users = Users.query.get(id)
     users.last_name = last_name
@@ -135,7 +135,7 @@ def updatelastname(id, last_name):
 
     return redirect(url_for("home"))
 
-@app.route("/delete/<int:id>")
+@app.route("/delete/<int:id>", methods=('POST',))
 def delete(id):
     athleticevent = AthleticEvent.query.get(id)
     db.session.delete(athleticevent)
@@ -143,7 +143,7 @@ def delete(id):
 
     return redirect(url_for("home"))
 
-@app.route("/deleteusers/<int:id>")
+@app.route("/deleteuser/<int:id>", methods=('POST',))
 def deleteuser(id):
     users = Users.query.get(id)
     db.session.delete(users)

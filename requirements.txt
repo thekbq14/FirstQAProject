@@ -1,2 +1,5 @@
 flask
 flask-sqlalchemy
+flask-testing
+pytest
+pytest-cov
