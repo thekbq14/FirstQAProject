@@ -1,4 +1,4 @@
-# FirstQAProject
+# FirstQAProject - Athletic Scoreboard
 
 **Introduction**
 
@@ -65,4 +65,5 @@ Unit Testing was done so by testing each functions separately and seeing the res
 Integration Tests are used to test the whole program as a whole compared to just a function in Unit testing. Selenium can be used, this is done through installing it through requirements.txt on Visual Studio Code. This simulates a user go through the website by filling forms and clicking buttons. These can also be automated through Jenkins. This wasn't used in my application due to the fact that there was no buttons or forms used. Next time an application is created, more time will be given to allow forms and buttons to be produced and hence allow integration tests.
 
 **Conclusion/Future Improvements**
+
 Overall, do feel like that the program was a success, as at the end of the day it works and does what is required by the stackholders and users. However, if done again a lot of changes could be done to it, such as adding buttons and making the Application look more neat and tidy, this could have been done by adding CSS to add colour or just href  functions for buttons. This in turn would have made the selenium tests worthwhile to have been done as they need buttons and WTForms to work or be used to the best of there ability.
